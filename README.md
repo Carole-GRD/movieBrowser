@@ -1,7 +1,6 @@
 # Movie browser web application
 
-Création d'une application Web pour découvrir des films.
-Dans le cadre de ma formation "Développeuse Junior Web" chez BeCode.
+Application Web, pour découvrir des films, réalisée dans le cadre de ma formation "Développeuse Junior Web" chez BeCode.
 
 
 ## Deployment
