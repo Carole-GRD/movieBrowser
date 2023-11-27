@@ -2,6 +2,9 @@
 
 Application Web, pour découvrir des films, réalisée dans le cadre de ma formation "Développeuse Junior Web" chez BeCode.
 
+<!-- TODO : à supprimer -->
+https://developer.themoviedb.org/reference/trending-all
+https://developer.themoviedb.org/reference/intro/getting-started
 
 ## Deployment
 
