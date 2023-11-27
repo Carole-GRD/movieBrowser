@@ -1,3 +1,5 @@
+import React from 'react'
+
 import App from "../App";
 import AccountPage from "../pages/account/account.page";
 import HomePage from "../pages/home/home.page";
