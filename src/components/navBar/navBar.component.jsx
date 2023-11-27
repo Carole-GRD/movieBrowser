@@ -1,6 +1,9 @@
 import React from 'react'
 
 import { Link } from "react-router-dom"
+import { homeIcon } from '../../assets/icons/home.png'
+import { searchIcon } from '../../assets/icons/search.png'
+import { userIcon } from '../../assets/icons/user.png'
 
 
 export default function SearchBar() {
@@ -9,17 +12,17 @@ export default function SearchBar() {
             <ul>
                 <li>
                     <Link to="/">
-                        <img src="./src/assets/icons/home.png" alt="Retourner à la page d'accueil" />
+                        <img src={homeIcon} alt="Retourner à la page d'accueil" />
                     </Link>
                 </li>
                 <li>
                     <Link to="/search">
-                    <img src="./src/assets/icons/search.png" alt="Rechercher un film" />
+                    <img src={searchIcon} alt="Rechercher un film" />
                     </Link>
                 </li>
                 <li>
                     <Link to="/account">
-                    <img src="./src/assets/icons/user.png" alt="Accéder à mon compte utilisateur" />
+                    <img src={userIcon} alt="Accéder à mon compte utilisateur" />
                     </Link>
                 </li>
             </ul>
