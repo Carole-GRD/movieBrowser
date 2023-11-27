@@ -6,7 +6,7 @@ import SearchIcon from '../../assets/icons/search.png'
 import UserIcon from '../../assets/icons/user.png'
 
 
-export default function SearchBar() {
+export default function MainNavBar() {
     return (
         <nav>
             <ul>

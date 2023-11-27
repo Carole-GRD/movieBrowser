@@ -11,6 +11,7 @@ https://movie-browser-nu.vercel.app/
 
 ### Netlify
 
+https://legendary-meerkat-da66ea.netlify.app/
 
 
 ## Bibliothèques utilisées :

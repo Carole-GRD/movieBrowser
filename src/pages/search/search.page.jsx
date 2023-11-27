@@ -1,7 +1,8 @@
 import React from 'react'
 
 import Title from '../../components/title/title.component'
-import SearchBar from '../../components/navBar/navBar.component'
+import MainNavBar from '../../components/mainNavBar/mainNavBar.component'
+
 
 export default function SearchPage() {
 
@@ -10,7 +11,7 @@ export default function SearchPage() {
             <Title />
             <h2>SEARCH</h2>
 
-            <SearchBar />
+            <MainNavBar />
         </div>
     )
 }

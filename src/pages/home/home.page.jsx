@@ -2,7 +2,8 @@ import React from 'react'
 
 
 import Title from '../../components/title/title.component'
-import SearchBar from '../../components/navBar/navBar.component'
+import MainNavBar from '../../components/mainNavBar/mainNavBar.component'
+
 
 export default function HomePage() {
 
@@ -10,7 +11,7 @@ export default function HomePage() {
         <div>
             <Title />
 
-            <SearchBar />
+            <MainNavBar />
         </div>
     )
 }
