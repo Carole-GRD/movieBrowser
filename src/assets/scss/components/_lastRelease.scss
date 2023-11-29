@@ -1,0 +1,55 @@
+
+.last-release {
+    position: absolute;
+    top: clamp(55px, 8vmax, 130px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+        object-fit: cover;
+        max-height: 40vh;
+        border-radius: 15px;
+    }
+
+    .player {
+        position: absolute;
+        bottom: 10%;
+        width: 60%;
+        left: 15px;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(1px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        img {
+            // filter: invert(100%);
+            width: 5vh;
+            height: 5vh;
+            
+        }
+        div {
+            padding-left: 10%;
+
+            p:first-of-type {
+                font-weight: 200;
+                font-size: .5rem;
+            }
+    
+            p:last-of-type {
+                font-weight: 400;
+                font-size: .6rem;
+            }
+    
+        }
+
+
+    }
+
+}

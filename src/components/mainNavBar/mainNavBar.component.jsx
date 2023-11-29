@@ -1,9 +1,8 @@
-import React from 'react'
 
 import { Link } from "react-router-dom"
-import HomeIcon from '../../assets/icons/home.png'
-import SearchIcon from '../../assets/icons/search.png'
-import UserIcon from '../../assets/icons/user.png'
+import HomeIcon from '../../assets/icons/home2.svg'
+import SearchIcon from '../../assets/icons/search.svg'
+import UserIcon from '../../assets/icons/user.svg'
 
 
 export default function MainNavBar() {

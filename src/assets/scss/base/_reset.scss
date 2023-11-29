@@ -8,13 +8,4 @@ body {
     background-color: $color-black;
     color: $color-white;
     font-family: 'Lato', sans-serif;
-
-    img {
-        width: clamp(50px, 7vw, 70px);
-        filter: invert(50%);
-        cursor: pointer;
-    }
-    img:hover {
-        filter: invert(100%);
-    }
 }
