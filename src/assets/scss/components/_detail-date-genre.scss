@@ -23,9 +23,9 @@
         gap: 10px;
         flex-wrap: wrap;
         p {
-            border: 1px solid $color-white-transparent;
             padding: 5px 15px;
             border-radius: 16px;
+            box-shadow: -1px -1px 3px $color-white-transparent;
         }
     }
 }

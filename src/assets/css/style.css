@@ -544,9 +544,9 @@ nav ul li img {
   flex-wrap: wrap;
 }
 .detail-date-genre .genre p {
-  border: 1px solid rgba(255, 255, 255, 0.3843137255);
   padding: 5px 15px;
   border-radius: 16px;
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.3843137255);
 }
 
 .detail-synopsis {
