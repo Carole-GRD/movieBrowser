@@ -1,0 +1,22 @@
+
+.detail-image {
+    position: relative;
+    top: 0  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img:first-of-type {
+        object-fit: cover;
+        position: relative;
+        z-index: 0;
+        width: 100%;
+
+    }
+    img:last-of-type {
+        position: absolute;
+        z-index: 1;
+        width: 10%;
+        cursor: pointer;
+    }
+}

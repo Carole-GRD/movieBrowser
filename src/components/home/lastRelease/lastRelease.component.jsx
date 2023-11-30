@@ -1,4 +1,4 @@
-import Play from '../../assets/icons/play.svg'
+import Play from '../../../assets/icons/play.svg'
 
 function LastReleaseComponent( { lastRelease } ) {
 

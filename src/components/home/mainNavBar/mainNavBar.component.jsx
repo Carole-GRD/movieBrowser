@@ -1,8 +1,8 @@
 
 import { Link } from "react-router-dom"
-import HomeIcon from '../../assets/icons/home2.svg'
-import SearchIcon from '../../assets/icons/search.svg'
-import UserIcon from '../../assets/icons/user.svg'
+import HomeIcon from '../../../assets/icons/home2.svg'
+import DiscoverIcon from '../../../assets/icons/search.svg'
+import UserIcon from '../../../assets/icons/user.svg'
 
 
 export default function MainNavBar() {
@@ -15,8 +15,8 @@ export default function MainNavBar() {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/search">
-                    <img src={SearchIcon} alt="Rechercher un film" />
+                    <Link to="/discover">
+                    <img src={DiscoverIcon} alt="Rechercher un film" />
                     </Link>
                 </li>
                 <li>

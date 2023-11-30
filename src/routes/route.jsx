@@ -3,8 +3,8 @@ import React from 'react'
 import App from "../App";
 import AccountPage from "../pages/account/account.page";
 import HomePage from "../pages/home/home.page";
-import SearchPage from "../pages/search/search.page";
-import ShowPage from '../pages/show/show.page';
+import DiscoverPage from '../pages/discover/discover.page';
+import DetailPage from '../pages/detail/detail.page';
 
 
 export const route = [
@@ -18,11 +18,11 @@ export const route = [
             },
             {
                 path: '/movie/:id',
-                element: <ShowPage />
+                element: <DetailPage />
             },
             {
-                path: '/search',
-                element: <SearchPage />
+                path: '/discover',
+                element: <DiscoverPage />
             },
             {
                 path: '/account',
