@@ -18,12 +18,32 @@ async function fetchAllMovies() {
 
     try {
         const response = await axios.get(URL, options);
-        return response;
+
+        const allMoviesData = response.data.results.map(movie => movie);
+
+        const lastReleaseData = allMoviesData.reduce((latestMovie, currentMovie) => {
+            const latestReleaseDate = new Date(latestMovie.release_date);
+            const currentReleaseDate = new Date(currentMovie.release_date);
+            return latestReleaseDate > currentReleaseDate ? latestMovie : currentMovie;
+        }, allMoviesData[0]);
+
+        return {allMoviesData, lastReleaseData};
     }
     catch (error) {
         console.error('Erreur lors de la récupération des films :', error.message);
     }
 
 }
+// async function fetchAllMovies() {
+
+//     try {
+//         const response = await axios.get(URL, options);
+//         return response;
+//     }
+//     catch (error) {
+//         console.error('Erreur lors de la récupération des films :', error.message);
+//     }
+
+// }
 
 export default fetchAllMovies

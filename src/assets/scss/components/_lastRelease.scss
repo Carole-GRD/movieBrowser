@@ -1,13 +1,15 @@
 
 .last-release {
     position: absolute;
-    top: clamp(55px, 8vmax, 130px);
+    top: clamp(45px, 8vmax, 90px);
     left: 50%;
     transform: translateX(-50%);
+    z-index: 0;
 
     img {
         object-fit: cover;
-        max-height: 40vh;
+        max-height: clamp(100px, 30vmax, 300px);
+        max-width: 80vw;
         border-radius: 15px;
     }
 
@@ -32,6 +34,7 @@
             // filter: invert(100%);
             width: 5vh;
             height: 5vh;
+            cursor: pointer;
             
         }
         div {
