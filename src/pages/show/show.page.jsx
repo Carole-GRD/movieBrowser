@@ -7,7 +7,7 @@ function ShowPage() {
     return (
         <section>
             {/* <img src="" alt="" /> */}
-            <h2>Titre du film : {id}</h2>
+            <h2>Id du film : {id}</h2>
         </section>
     )
 }
