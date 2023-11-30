@@ -30,7 +30,7 @@ function DetailPage() {
     }, [])
 
     return (
-        <section>
+        <section className='section-detail'>
             
             {movie && (
                 <>

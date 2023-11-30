@@ -527,8 +527,8 @@ nav ul li img {
   border-top: 1px solid rgba(255, 255, 255, 0.3843137255);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3843137255);
   display: grid;
-  grid-template-columns: 45% 45%;
-  gap: 10%;
+  grid-template-columns: 43% 43%;
+  gap: 14%;
 }
 .detail-date-genre h3 {
   margin-bottom: 10px;
@@ -564,4 +564,13 @@ nav ul li img {
 /*
 This file is used to contain all component imports.
 Files inside this folder can contain specific element styles and layout. 
-*//*# sourceMappingURL=style.css.map */
+*/
+@media only screen and (min-width: 476px) {
+  .section-detail {
+    max-width: clamp(380px, 80vw, 600px);
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    bottom: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

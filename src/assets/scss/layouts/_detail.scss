@@ -1,0 +1,18 @@
+@media only screen and (min-width: 476px) {
+    .section-detail {
+        max-width: clamp(380px, 80vw, 600px);
+        margin: 0 auto;
+        position: relative;
+        top: 20px;
+        bottom: 20px;
+    }
+}
+// @media only screen and (min-width: 476px) {
+
+// }
+// @media only screen and (min-width: 992px) {
+
+// }
+// @media only screen and (min-width: 1200px) {
+
+// }
