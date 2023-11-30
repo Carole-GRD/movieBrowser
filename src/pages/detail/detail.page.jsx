@@ -4,6 +4,7 @@ import ImageComponent from '../../components/detail/image/image.component';
 import TitleComponent from '../../components/detail/title/title.component';
 import fetchOneMovie from '../../api/onemovie.api';
 import DateGenreComponent from '../../components/detail/date-genres/date-genre.component';
+import SynopsisComponent from '../../components/detail/synopsis/synopsis.component';
 
 
 function DetailPage() {
@@ -28,20 +29,24 @@ function DetailPage() {
 
     }, [])
 
-
-
     return (
         <section>
             
             {movie && (
                 <>
-                    <ImageComponent image={movie.backdrop_path} title={movie.title} />
+                    <ImageComponent 
+                        image={movie.backdrop_path} 
+                        title={movie.title} />
                     <TitleComponent
                         title={movie.title} 
                         runtime={movie.runtime}
-                        voteAverage={movie.vote_average}
-                    />
-                    <DateGenreComponent date={movie.release_date} genres={movie.genres} />
+                        voteAverage={movie.vote_average} />
+                    <DateGenreComponent 
+                        date={movie.release_date} 
+                        genres={movie.genres} />
+                    <SynopsisComponent
+                        overview={movie.overview} />
+                    {/* TODO : Related Movies */}
                 </>
             )}
         </section>
