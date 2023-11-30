@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import ImageComponent from '../../components/detail/image/image.component';
 import TitleComponent from '../../components/detail/title/title.component';
 import fetchOneMovie from '../../api/onemovie.api';
+import DateGenreComponent from '../../components/detail/date-genres/date-genre.component';
 
 
 function DetailPage() {
@@ -15,6 +16,7 @@ function DetailPage() {
             try {
                 if (id) {
                     const movie = await fetchOneMovie(id);
+                    console.log(movie);
                     setMovie(movie);
                 }
             } catch (error) {
@@ -39,6 +41,7 @@ function DetailPage() {
                         runtime={movie.runtime}
                         voteAverage={movie.vote_average}
                     />
+                    <DateGenreComponent date={movie.release_date} genres={movie.genres} />
                 </>
             )}
         </section>

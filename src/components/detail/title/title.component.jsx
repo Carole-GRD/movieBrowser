@@ -7,7 +7,7 @@ function TitleComponent( {title, runtime, voteAverage} ) {
     return (
         <div className='detail-title'>  
             <div>
-                <h3>{title}</h3>
+                <h2>{title}</h2>
                 <img src={definition4KIcon} alt="Définition 4K" />
             </div>
             <div>
