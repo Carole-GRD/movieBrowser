@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import fetchAllMovies from '../../api/movie.api';
 import ImageComponent from '../../components/detail/image/image.component';
+import TitleComponent from '../../components/detail/title/title.component';
+import fetchOneMovie from '../../api/onemovie.api';
 
 
 function DetailPage() {
@@ -12,11 +13,9 @@ function DetailPage() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const fetch = await fetchAllMovies();
-                if (id && fetch) {
-                    const allMoviesData = fetch.allMoviesData;
-                    const movieData = allMoviesData.find(movie => movie.id == id);
-                    setMovie(movieData);
+                if (id) {
+                    const movie = await fetchOneMovie(id);
+                    setMovie(movie);
                 }
             } catch (error) {
                 console.error('Erreur lors de la récupération des films :', error.message);
@@ -35,7 +34,11 @@ function DetailPage() {
             {movie && (
                 <>
                     <ImageComponent image={movie.backdrop_path} title={movie.title} />
-                    <h3>{movie.title}</h3>
+                    <TitleComponent
+                        title={movie.title} 
+                        runtime={movie.runtime}
+                        voteAverage={movie.vote_average}
+                    />
                 </>
             )}
         </section>

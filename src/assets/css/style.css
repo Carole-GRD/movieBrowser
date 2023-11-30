@@ -503,6 +503,23 @@ nav ul li img {
   cursor: pointer;
 }
 
+.detail-title {
+  padding: 30px 25px;
+}
+.detail-title div {
+  display: flex;
+  align-items: center;
+}
+.detail-title div h3 {
+  font-size: 1.5rem;
+  padding-bottom: 5px;
+  padding-right: 15px;
+}
+.detail-title div p {
+  font-size: 0.8rem;
+  margin: 0 20px 0 5px;
+}
+
 /*
 This file is used to contain all component imports.
 Files inside this folder can contain specific element styles and layout. 
