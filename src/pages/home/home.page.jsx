@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import fetchAllMovies from '../../api/movie.api';
+import fetchAllMovies from '../../api/allmovies.api';
 
 import Title from '../../components/home/title/title.component'
 import MainNavBar from '../../components/home/mainNavBar/mainNavBar.component'

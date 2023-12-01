@@ -1,0 +1,27 @@
+
+
+.discover-movies {
+    position: relative;
+    top: clamp(120px, 12vmax, 150px);
+    left: clamp(45px, 8vmax, 90px);
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    row-gap: 50px;
+
+    .discover-movie-item {
+        img {
+            max-width: 80%;
+            border-radius: 16px;
+        }
+        // p {
+
+        // }
+        h3 {
+            font-size: 1.2rem;
+            span {
+                font-weight: 300;
+            }
+        }
+    }
+}

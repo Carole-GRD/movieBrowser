@@ -1,0 +1,39 @@
+
+
+.searchbar {
+    position: relative;
+    top: clamp(45px, 8vmax, 90px);
+    left: clamp(45px, 8vmax, 90px);
+
+    form {
+        position: relative;
+        
+        input {
+            padding: 20px 20px 20px 70px;
+            background-color: $color-white;
+            border-radius: 16px;
+            width: clamp(100px, 50vmax, 500px);
+            outline: none;
+        }
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 10px;
+            padding: 20px;
+            width: 30px;
+            height: 30px;
+            background-color: $color-white;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

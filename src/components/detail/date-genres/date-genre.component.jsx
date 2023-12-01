@@ -11,7 +11,7 @@ function DateGenreComponent( {date, genres}) {
                 <h3>Genre</h3>
                 <div className="genre">
                     {genres.map(genre => (
-                        <p>
+                        <p key={genre.name}>
                             {
                                 genre.name === 'Science Fiction' ?
                                 'Sci-Fi' :

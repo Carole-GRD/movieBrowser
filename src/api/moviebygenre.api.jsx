@@ -3,4 +3,4 @@
 // options
 
 
-`https://api.themoviedb.org/3/discover/movie?without_genres=fantasy`
+`https://api.themoviedb.org/3/discover/movie?with_genres=fantasy`

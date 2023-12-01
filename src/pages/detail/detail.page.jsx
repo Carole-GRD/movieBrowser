@@ -5,6 +5,7 @@ import TitleComponent from '../../components/detail/title/title.component';
 import fetchOneMovie from '../../api/onemovie.api';
 import DateGenreComponent from '../../components/detail/date-genres/date-genre.component';
 import SynopsisComponent from '../../components/detail/synopsis/synopsis.component';
+import MainNavBar from '../../components/home/mainNavBar/mainNavBar.component';
 
 
 function DetailPage() {
@@ -46,7 +47,10 @@ function DetailPage() {
                         genres={movie.genres} />
                     <SynopsisComponent
                         overview={movie.overview} />
+
                     {/* TODO : Related Movies */}
+
+                    <MainNavBar />
                 </>
             )}
         </section>
