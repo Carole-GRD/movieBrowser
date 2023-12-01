@@ -11,7 +11,7 @@ const options = { method: 'GET', headers: { accept: 'application/json' } };
 //         Authorization: `Bearer ${API_AUTHORIZATION}`
 //     }
 // };
-const URL = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}`;
+const URL = "https://api.themoviedb.org/3/discover/movie?api_key=" + API_KEY;
 
 
 async function fetchAllMovies() {
