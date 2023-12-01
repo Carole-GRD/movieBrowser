@@ -31,29 +31,32 @@ function DetailPage() {
     }, [])
 
     return (
-        <section className='section-detail'>
+        <>
+            <section className='section-detail'>
+                
+                {movie && (
+                    <>
+                        <ImageComponent 
+                            image={movie.backdrop_path} 
+                            title={movie.title} />
+                        <TitleComponent
+                            title={movie.title} 
+                            runtime={movie.runtime}
+                            voteAverage={movie.vote_average} />
+                        <DateGenreComponent 
+                            date={movie.release_date} 
+                            genres={movie.genres} />
+                        <SynopsisComponent
+                            overview={movie.overview} />
+
+                        {/* TODO : Related Movies */}
+
+                    </>
+                )}
+            </section>
             
-            {movie && (
-                <>
-                    <ImageComponent 
-                        image={movie.backdrop_path} 
-                        title={movie.title} />
-                    <TitleComponent
-                        title={movie.title} 
-                        runtime={movie.runtime}
-                        voteAverage={movie.vote_average} />
-                    <DateGenreComponent 
-                        date={movie.release_date} 
-                        genres={movie.genres} />
-                    <SynopsisComponent
-                        overview={movie.overview} />
-
-                    {/* TODO : Related Movies */}
-
-                    <MainNavBar />
-                </>
-            )}
-        </section>
+            <MainNavBar />
+        </>
     )
 }
 

@@ -2,13 +2,13 @@ import { useState } from 'react'
 import SearchIcon from '../../../assets/icons/loupe.png'
 
 
-function SearchBar( {onSearchMovies} ) {
+function SearchBar( {onSearchByKeyword} ) {
 
     const [inputValue, setInputValue] = useState('');
 
     function handleSearch(e) {
         e.preventDefault();
-        onSearchMovies(inputValue);
+        onSearchByKeyword(inputValue);
     }
     return (
         <div className="searchbar">
