@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import fetchGenres from "../../../api/genre.api";
+import Arrow from '../../../assets/icons/arrow.png';
 
 function GenreNavBar( { onSearchByGenre } ) {
 
@@ -28,14 +29,26 @@ function GenreNavBar( { onSearchByGenre } ) {
 
     
     return (
-        <div className="genre-navbar">
-            {allGenres && (
-                allGenres.map (genre => (
-                    <button key={genre.id} onClick={() => searchByGenre(genre.id)}>
-                        {genre.name}
-                    </button>
-                ))
-            )}
+        <div className="genre-navbar-container">
+            <button className="arrow-icon">
+                <img src={Arrow} alt="Déflier vers la gauche" />
+            </button>
+            <div className="genre-navbar">
+                {allGenres && (
+                    allGenres.map (genre => (
+                        <button 
+                            className="genre-name" 
+                            key={genre.id} 
+                            onClick={() => searchByGenre(genre.id)}
+                        >
+                            {genre.name}
+                        </button>
+                    ))
+                )}
+            </div>
+            <button className="arrow-icon">
+                <img src={Arrow} alt="Déflier vers la droite" />
+            </button>
         </div>
     )
 }

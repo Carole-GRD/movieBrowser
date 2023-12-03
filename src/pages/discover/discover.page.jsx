@@ -17,6 +17,8 @@ import Movies from '../../components/discover/movies/movies';
 function DiscoverPage() {
 
     const [movieFind, setMovieFind] = useState(null);
+    const [isSearchByGenre, setIsSearchByGenre] = useState(false);
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -36,6 +38,7 @@ function DiscoverPage() {
             try {
                 const moviesByKeyword = await movieByKeyword(keyword);
                 setMovieFind(moviesByKeyword.results);
+                setIsSearchByGenre(false);
             } catch (error) {
                 console.error('Erreur lors de la récupération du film :', error.message);
             }
@@ -49,6 +52,7 @@ function DiscoverPage() {
                 const movieData = await movieByGenre(genreName);
                 console.log(movieData);
                 setMovieFind(movieData.results);
+                setIsSearchByGenre(true);
             } catch (error) {
                 console.error('Erreur lors de la récupération des films par genre :', error.message);
             }
@@ -59,9 +63,12 @@ function DiscoverPage() {
     console.log(movieFind);
 
     return (
-        <div>
+        <div className='discover-page'>
             <Title />
-            <SearchBar onSearchByKeyword={searchByKeyword} />
+            <SearchBar  
+                onSearchByKeyword={searchByKeyword}
+                isSearchByGenre={isSearchByGenre} 
+            />
             <GenreNavBar onSearchByGenre={searchByGenre} />
             {movieFind && (
                 <Movies movies={movieFind} />

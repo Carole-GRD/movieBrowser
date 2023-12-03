@@ -1,6 +1,47 @@
 
-.genre-navbar {
+.genre-navbar-container {
     position: relative;
     top: clamp(90px, 10vmax, 120px);
-    left: clamp(45px, 8vmax, 90px);
+    // left: clamp(45px, 8vmax, 90px);
+    display: flex;
+    // max-width: 80vw;
+    max-width: 100%;
+    padding: 0 5vw;
+
+    .arrow-icon {
+        width: 50px;
+        height: 50px;
+        background-color: $color-black;
+        
+        img {
+            width: 50px;
+            height: 50px;
+            filter: invert(100%);
+        }
+
+        &:last-of-type {
+            img {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    
+
+    .genre-navbar {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 15px;
+        // overflow: hidden;
+
+        .genre-name {
+            background-color: $color-black;
+            color: $color-white;
+            padding: 5px 15px;
+            border-radius: 16px;
+            box-shadow: -1px -1px 3px $color-white-transparent;
+            margin-right: 15px;
+        }
+    }
+
 }
