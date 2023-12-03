@@ -38,7 +38,7 @@ function DiscoverPage() {
             try {
                 const moviesByKeyword = await movieByKeyword(keyword);
                 setMovieFind(moviesByKeyword.results);
-                setIsSearchByGenre(false);
+                setIsSearchByGenre(true);
             } catch (error) {
                 console.error('Erreur lors de la récupération du film :', error.message);
             }

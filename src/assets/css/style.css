@@ -628,6 +628,7 @@ nav ul li img {
   border-radius: 16px;
   box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.3843137255);
   margin-right: 15px;
+  margin: 5px 0;
 }
 
 .discover-movies {
@@ -641,7 +642,7 @@ nav ul li img {
   row-gap: 50px;
   max-width: 100%;
   padding: 0 5vw;
-  margin-bottom: 200px;
+  margin-bottom: 600px;
 }
 .discover-movies .discover-movie-item img {
   max-width: 100%;
