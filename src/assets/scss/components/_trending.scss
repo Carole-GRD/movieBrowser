@@ -6,7 +6,7 @@
 
     width: 80vw;
     margin: 0 auto;
-    padding-bottom: 350px;
+    // padding-bottom: 750px;
 
     // z-index: 0;
     // overflow-y: hidden;
@@ -38,6 +38,11 @@
                     max-width: 100%;
                     border-radius: 16px;
                 }
+
+            }
+
+            &:last-of-type {
+                padding-bottom: 150px;
             }
         }
     }

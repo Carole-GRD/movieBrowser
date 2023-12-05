@@ -433,7 +433,6 @@ nav ul li img {
   top: clamp(130px, 38vmax, 450px);
   width: 80vw;
   margin: 0 auto;
-  padding-bottom: 350px;
 }
 .trending h3 {
   font-size: 1.3rem;
@@ -459,6 +458,9 @@ nav ul li img {
 .trending .grid-container .grid-item .grid-item-content img {
   max-width: 100%;
   border-radius: 16px;
+}
+.trending .grid-container .grid-item:last-of-type {
+  padding-bottom: 150px;
 }
 
 @media only screen and (min-width: 476px) {
