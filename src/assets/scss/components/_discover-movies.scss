@@ -1,16 +1,11 @@
-
-
 .discover-movies {
     position: relative;
     top: clamp(120px, 25vmax, 200px);
-    left: 0;
-    right: 0;
     display: grid;
-    grid-template-columns: 40% 45%;
-    gap: 10%;
+    grid-template-columns: 100%;
     row-gap: 50px;
-    max-width: 100%;
-    padding: 0 5vw;
+    max-width: 100vw;
+    padding: 0 10vw;
     margin-bottom: 600px;
 
     .discover-movie-item {
@@ -18,9 +13,7 @@
             max-width: 100%;
             border-radius: 16px;
         }
-        // p {
 
-        // }
         h3 {
             font-size: 1.2rem;
             span {
@@ -30,6 +23,16 @@
     }
 }
 
+
+@media only screen and (min-width: 456px) {
+    .discover-movies {
+        left: 0;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        gap: 10%;
+        row-gap: 50px;
+    }
+}
 
 @media only screen and (min-width: 992px) {
     .discover-movies {

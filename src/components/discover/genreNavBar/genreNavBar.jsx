@@ -30,9 +30,9 @@ function GenreNavBar( { onSearchByGenre } ) {
     
     return (
         <div className="genre-navbar-container">
-            <button className="arrow-icon">
+            {/* <button className="arrow-icon">
                 <img src={Arrow} alt="Déflier vers la gauche" />
-            </button>
+            </button> */}
             <div className="genre-navbar">
                 {allGenres && (
                     allGenres.map (genre => (
@@ -46,9 +46,9 @@ function GenreNavBar( { onSearchByGenre } ) {
                     ))
                 )}
             </div>
-            <button className="arrow-icon">
+            {/* <button className="arrow-icon">
                 <img src={Arrow} alt="Déflier vers la droite" />
-            </button>
+            </button> */}
         </div>
     )
 }

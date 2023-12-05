@@ -4,6 +4,9 @@
     position: relative;
     top: clamp(45px, 8vmax, 90px);
     left: clamp(45px, 8vmax, 90px);
+    // max-width: calc(100% - 90px);
+    
+    max-width: 70vw;
 
     form {
         position: relative;
@@ -12,7 +15,7 @@
             padding: 20px 20px 20px 70px;
             background-color: $color-white;
             border-radius: 16px;
-            width: clamp(100px, 50vmax, 500px);
+            width: clamp(100px, 70vmin, 500px);
             outline: none;
         }
         button {
