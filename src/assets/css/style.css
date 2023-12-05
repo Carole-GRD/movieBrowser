@@ -433,8 +433,7 @@ nav ul li img {
   top: clamp(130px, 38vmax, 450px);
   width: 80vw;
   margin: 0 auto;
-  z-index: 0;
-  overflow-y: hidden;
+  padding-bottom: 350px;
 }
 .trending h3 {
   font-size: 1.3rem;
@@ -635,7 +634,7 @@ nav ul li img {
   row-gap: 50px;
   max-width: 100vw;
   padding: 0 10vw;
-  margin-bottom: 600px;
+  margin-bottom: 350px;
 }
 .discover-movies .discover-movie-item img {
   max-width: 100%;
@@ -661,12 +660,14 @@ nav ul li img {
   .discover-movies {
     grid-template-columns: repeat(3, 30%);
     gap: 5%;
+    row-gap: 50px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .discover-movies {
     grid-template-columns: repeat(4, 22%);
     gap: 4%;
+    row-gap: 50px;
   }
 }
 /*
